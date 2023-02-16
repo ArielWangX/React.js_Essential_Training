@@ -16,14 +16,18 @@
     <div id="root"></div>
 
     <script type="text/javascript">
-      let heading = React.createElement(
-        "h1",
-        null,
-        "Getting Started with React"
+      let ul = React.createElement(
+        "ul",
+        { style: {color: "blue"} },
+        React.createElement("li", null, "Monday"),
+        React.createElement("li", null, "Tuesday"),
+        React.createElement("li", null, "Wednesday"),
+        React.createElement("li", null, "Thursday"),
+        React.createElement("li", null, "Friday")
       );
 
       ReactDOM.render(
-        heading,
+        ul,
         document.getElementById("root")
       );
     </script>
